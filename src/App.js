@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { Greet } from './components/Greet';
+import Greet  from './components/Greet';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 
@@ -13,7 +13,9 @@ function App() {
         <p>
           {/* <!--Edit <code>src/App.js</code> and save to reload.--> */}
           {/* <Greet></Greet> */}
-          <Greet />
+          <Greet name="Bruce" heroName="Batman"       />
+          <Greet name="Clark" heroName="Superman"     />
+          <Greet name="Diana" heroName="Wonder Woman" />
           <Welcome />
           <Hello />
         </p>
