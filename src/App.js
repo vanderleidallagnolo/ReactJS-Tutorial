@@ -13,10 +13,16 @@ function App() {
         <p>
           {/* <!--Edit <code>src/App.js</code> and save to reload.--> */}
           {/* <Greet></Greet> */}
-          <Greet name="Bruce" heroName="Batman"       />
-          <Greet name="Clark" heroName="Superman"     />
+          <Greet name="Bruce" heroName="Batman"       >
+            <p>This is children props</p>
+          </Greet>
+          <Greet name="Clark" heroName="Superman"     >
+            <button>Action</button>
+          </Greet>
           <Greet name="Diana" heroName="Wonder Woman" />
-          <Welcome />
+          <Welcome name="Bruce" heroName="Batman"       />
+          <Welcome name="Clark" heroName="Superman"       />
+          <Welcome name="Diana" heroName="Wonder Woman"       />
           <Hello />
         </p>
         <a
