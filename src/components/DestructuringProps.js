@@ -9,9 +9,9 @@ const DestructuringProps = props => {
     return (
 
 <div>
-    <h1>
+    <h2>
         Hello {name} a.k.a. {heroName}
-    </h1>
+    </h2>
     {props.children}
     <p>Gender: {gender} </p>
 </div>

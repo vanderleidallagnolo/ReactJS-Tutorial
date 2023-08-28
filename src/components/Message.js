@@ -25,12 +25,12 @@ class Message extends Component
             return (
                 
                 <div>
-                    <h1>
-                    {this.state.message}
-                    </h1>                    
                     <h2>
+                    {this.state.message}
+                    </h2>                    
+                    <h3>
                     {this.state.other}
-                    </h2>
+                    </h3>
                     <button onClick={() => this.changeMessage()}>Subscribe</button>
                 </div>
 

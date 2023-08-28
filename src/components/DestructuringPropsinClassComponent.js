@@ -9,9 +9,9 @@ class DestructuringPropsinClassComponent extends Component{
         const {heroName} = this.props
 
         return (
-            <h1>
+            <h2>
                 Welcome {name} a.k.a {heroName}
-            </h1>
+            </h2>
         )
     }
 

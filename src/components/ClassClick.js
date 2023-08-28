@@ -9,6 +9,7 @@ class ClassClick extends Component {
     render() {
     return (
       <div>
+        <div>See in console</div>
         <button onClick={this.clickHandler}>Click me</button>
       </div>
     )
