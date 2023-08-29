@@ -36,6 +36,7 @@ import ParentMemoComp from './components/ParentMemoComp';
 import RefsDemo from './components/RefsDemo';
 import RefsDemoOldApproach from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
 
 function App() {
   return (
@@ -221,7 +222,16 @@ function App() {
             <li><h1>Forwarding Refs</h1></li>
 
             <div>
-            <FocusInput />
+            <FRParentInput />
+            </div>            
+
+            <hr />
+
+
+            <li><h1>Portals</h1></li>
+
+            <div>
+            <FRParentInput />
             </div>            
 
             <hr />
