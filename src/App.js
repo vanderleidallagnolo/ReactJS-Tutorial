@@ -30,6 +30,12 @@ import FragmentDemo from './components/FragmentDemo';
 import Tables from './components/Tables';
 import PureComp from './components/PureComp';
 import RegComp from './components/RegComp';
+import ParentComp from './components/ParentComp';
+import MemoComp from './components/MemoComp';
+import ParentMemoComp from './components/ParentMemoComp';
+import RefsDemo from './components/RefsDemo';
+import RefsDemoOldApproach from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
 
 function App() {
   return (
@@ -169,10 +175,53 @@ function App() {
             <li><h1>Pure components</h1></li>
 
             <div>
+              {/*}
             <PureComp />
             <RegComp />
+  */}
+
+            <ParentComp />
 
 
+            </div>            
+
+            <hr />
+
+
+            <li><h1>Memo function</h1></li>
+
+            <div>
+            Avoid re-renders when there is no changes in props - in Functions
+            <ParentMemoComp />
+
+
+            </div>            
+
+            <hr />
+
+            <li><h1>Refs - calling properties and methods on an element</h1></li>
+
+            <div>
+            Actual Approach
+            <RefsDemo />
+            <br />
+            Old Approach
+            <RefsDemoOldApproach />            </div>            
+
+            <hr />
+
+            <li><h1>Refs with Class components</h1></li>
+
+            <div>
+            <FocusInput />
+            </div>            
+
+            <hr />
+
+            <li><h1>Forwarding Refs</h1></li>
+
+            <div>
+            <FocusInput />
             </div>            
 
             <hr />
