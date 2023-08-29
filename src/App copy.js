@@ -18,18 +18,6 @@ import NameList                             from './components/NameList'        
 import NameList2                            from './components/Namelist2'                           ;  
 import NameList3                            from './components/NameList3'                            ;
 import Stylesheet                           from './components/Stylesheet'                          ;
-import Inline from './components/Inline';
-
-import './appStyles.css';
-import styles from './appStyles.module.css';
-
-import Form from './components/Form';
-import LifecycleA from './components/LifecycleA';
-import LifecycleC from './components/LifecycleC';
-import FragmentDemo from './components/FragmentDemo';
-import Tables from './components/Tables';
-import PureComp from './components/PureComp';
-import RegComp from './components/RegComp';
 
 function App() {
   return (
@@ -122,59 +110,7 @@ function App() {
 
             <div>
             <Stylesheet primary={true} />
-            </div>            
-            <div>
-            <Inline primary={true} />
-            </div>            
-            <div>
-            <h2 className="error">Error</h2>
-            <h2 className={styles.success}>Success</h2>
             </div>
-            <hr />
-
-            <li><h1>Basics of Form Handling</h1></li>
-
-            <div>
-            <Form />
-            </div>            
-
-            <hr />
-
-            <li><h1>Component Mounting Lifecycle Methods</h1></li>
-
-            <div>
-            <LifecycleA />
-            </div>            
-
-            <hr />
-
-            <li><h1>Updating Lifecycle Methods</h1></li>
-
-            <div>
-            <LifecycleC />
-            </div>            
-
-            <hr />
-
-            <li><h1>Fragments</h1></li>
-
-            <div>
-            <FragmentDemo />
-
-            <Tables />
-            </div>            
-
-            <hr />
-
-            <li><h1>Pure components</h1></li>
-
-            <div>
-            <PureComp />
-            <RegComp />
-
-
-            </div>            
-
             <hr />
 
 
