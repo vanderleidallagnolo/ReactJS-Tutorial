@@ -37,6 +37,14 @@ import RefsDemo from './components/RefsDemo';
 import RefsDemoOldApproach from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
+
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterEnhanced from './components/ClickCounterEnhanced';
+import HoverCounterEnhanced from './components/HoverCounterEnhanced';
 
 function App() {
   return (
@@ -231,7 +239,44 @@ function App() {
             <li><h1>Portals</h1></li>
 
             <div>
-            <FRParentInput />
+            <PortalDemo />
+            </div>            
+
+            <hr />
+
+            <li><h1>Error Boundary</h1></li>
+
+            <div>
+              <ErrorBoundary>
+                <Hero heroName="Batman" />
+                </ErrorBoundary>
+                <ErrorBoundary>
+                <Hero heroName="Superman" />                
+                </ErrorBoundary>
+                <ErrorBoundary>
+
+                <Hero heroName="Joker" />
+              </ErrorBoundary>
+            </div>            
+
+            <hr />
+
+            <li><h1>Higher Order Components - Part 1</h1></li>
+
+            <div>
+            <ClickCounter />
+            <HoverCounter />
+
+            </div>            
+
+            <hr />
+
+            <li><h1>HOC - Higher Order Components - Part 2</h1></li>
+
+            <div>
+            <ClickCounterEnhanced />
+            <HoverCounterEnhanced />
+
             </div>            
 
             <hr />
