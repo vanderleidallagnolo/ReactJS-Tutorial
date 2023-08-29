@@ -281,6 +281,16 @@ function App() {
 
             <hr />
 
+            <li><h1>HOC - Higher Order Components - Part 3</h1></li>
+
+            <div>
+            <ClickCounterEnhanced name='Vishwas'/>
+            <HoverCounterEnhanced />
+
+            </div>            
+
+            <hr />
+
 
           </ol>
 
