@@ -1,14 +1,21 @@
 import React, {Component} from 'react'
-import ComponentF from './ComponentF'
+import { UserConsumer } from './UserContext'
 
 class ComponentF extends Component {
 
     render() {
         return (
         
-            <div>
-                Component F
-            </div>
+            <UserConsumer>
+                {
+                
+                    username => {
+
+                        return <div>Hello {username}</div>
+                    }
+                
+                }
+            </UserConsumer>
         )
     }
 }

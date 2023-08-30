@@ -50,6 +50,8 @@ import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User.js';
 import CounterRenderProp from './components/CounterRenderProp';
 import CounterRenderChildren from './components/CounterRenderChildren';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
 
 function App() {
   return (
@@ -350,13 +352,24 @@ function App() {
 
             <hr />
 
-            <li><h1>Context - Part 1</h1></li>
+            <li><h1>Context</h1></li>
 
             <div>
-              Using this.props.render
- 
-              Using this.props.children
- 
+                  <UserProvider value="Vishwas" >
+                    <ComponentC />
+                  </UserProvider>
+
+            </div>          
+
+            <hr />
+
+            <li><h1>React and HTTP</h1></li>
+
+            <div>
+                  <UserProvider value="Vishwas" >
+                    <ComponentC />
+                  </UserProvider>
+
             </div>          
 
             <hr />
