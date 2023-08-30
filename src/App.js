@@ -45,6 +45,11 @@ import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import ClickCounterEnhanced from './components/ClickCounterEnhanced';
 import HoverCounterEnhanced from './components/HoverCounterEnhanced';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User.js';
+import CounterRenderProp from './components/CounterRenderProp';
+import CounterRenderChildren from './components/CounterRenderChildren';
 
 function App() {
   return (
@@ -288,6 +293,71 @@ function App() {
             <HoverCounterEnhanced />
 
             </div>            
+
+            <hr />
+
+            <li><h1>Render Props</h1></li>
+
+            <div>
+              Using this.props.render
+              <div>
+
+
+              <CounterRenderProp 
+                render={(count, incrementCount) => (
+
+                  <ClickCounterTwo count={count} incrementCount={incrementCount} />
+
+                ) }
+              
+              />
+
+              <CounterRenderProp 
+                render={(count, incrementCount) => (
+
+                  <HoverCounter count={count} incrementCount={incrementCount} />
+
+                ) }
+              
+              />
+
+              </div> 
+
+              Using this.props.children
+              <div>
+
+
+              <CounterRenderChildren>
+                {(count, incrementCount) => (
+
+                  <ClickCounterTwo count={count} incrementCount={incrementCount} />
+
+                ) }
+              
+                </CounterRenderChildren>
+
+              <CounterRenderChildren>
+                {(count, incrementCount) => (
+
+                  <HoverCounter count={count} incrementCount={incrementCount} />
+
+                ) }
+              
+              </CounterRenderChildren>
+
+              </div>  
+            </div>          
+
+            <hr />
+
+            <li><h1>Context - Part 1</h1></li>
+
+            <div>
+              Using this.props.render
+ 
+              Using this.props.children
+ 
+            </div>          
 
             <hr />
 
